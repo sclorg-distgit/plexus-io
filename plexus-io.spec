@@ -4,7 +4,7 @@
 
 Name:           %{?scl_prefix}%{pkg_name}
 Version:        2.0.5
-Release:        9.12%{?dist}
+Release:        9.13%{?dist}
 Summary:        Plexus IO Components
 
 License:        ASL 2.0
@@ -18,7 +18,7 @@ BuildRequires: %{?scl_prefix_java_common}javapackages-tools
 BuildRequires: %{?scl_prefix}plexus-utils
 BuildRequires: %{?scl_prefix}plexus-containers-container-default
 BuildRequires: %{?scl_prefix}plexus-components-pom
-BuildRequires: %{?scl_prefix_java_common}maven-local
+BuildRequires: %{?scl_prefix}maven-local
 BuildRequires: %{?scl_prefix}maven-compiler-plugin
 BuildRequires: %{?scl_prefix}maven-enforcer-plugin
 BuildRequires: %{?scl_prefix}maven-jar-plugin
@@ -72,6 +72,9 @@ set -e -x
 
 
 %changelog
+* Mon Feb 08 2016 Michal Srb <msrb@redhat.com> - 2.0.5-9.13
+- Fix BR on maven-local & co.
+
 * Mon Jan 11 2016 Michal Srb <msrb@redhat.com> - 2.0.5-9.12
 - maven33 rebuild #2
 
