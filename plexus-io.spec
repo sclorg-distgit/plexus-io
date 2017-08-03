@@ -3,7 +3,7 @@
 
 Name:           %{?scl_prefix}plexus-io
 Version:        2.7.1
-Release:        2.1%{?dist}
+Release:        2.2%{?dist}
 Summary:        Plexus IO Components
 License:        ASL 2.0
 URL:            https://github.com/codehaus-plexus/plexus-io
@@ -50,6 +50,9 @@ cp %{SOURCE1} .
 %license NOTICE.txt LICENSE-2.0.txt
 
 %changelog
+* Thu Jun 22 2017 Michael Simacek <msimacek@redhat.com> - 2.7.1-2.2
+- Mass rebuild 2017-06-22
+
 * Wed Jun 21 2017 Java Maintainers <java-maint@redhat.com> - 2.7.1-2.1
 - Automated package import and SCL-ization
 
